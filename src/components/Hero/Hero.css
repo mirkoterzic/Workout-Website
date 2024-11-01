@@ -1,0 +1,32 @@
+/* Hero.css */
+.hero {
+  position: relative; /* Positioning context for absolute child elements */
+  overflow: hidden; /* Prevent overflow */
+}
+
+.hero-image {
+  position: absolute; /* Position the image absolutely */
+  top: 0;
+  left: 0;
+  width: 100%; /* Make the image fill the container */
+  height: 100%; /* Ensure the image covers the height of the div */
+  object-fit: cover; /* Maintain aspect ratio while covering the div */
+  z-index: 0; /* Set the z-index so it’s below the text */
+  filter: brightness(0.8);
+}
+
+/* Text elements above the image */
+.hero > div {
+  position: relative;
+  z-index: 1;
+}
+
+.custom-drop-shadow {
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 1);
+}
+
+@media (min-width: 768px) {
+  .hero-image {
+    object-position: right; /* Adjust positioning if necessary */
+  }
+}

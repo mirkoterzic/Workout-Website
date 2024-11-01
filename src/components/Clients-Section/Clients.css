@@ -1,0 +1,47 @@
+.clients-section {
+  background: linear-gradient(
+    135deg,
+    #222222,
+    #333333
+  ); /* Dark gradient background */
+}
+
+.testimonial-card {
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: scale(1.05); /* Lift effect on hover */
+}
+
+.before-after-image {
+  border-radius: 0.5rem; /* Rounded corners for images */
+  width: 100%; /* Responsive width */
+  max-width: 400px; /* Increase max width for larger screens */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Added responsive adjustments */
+.after-image-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .before-after-image {
+    max-width: 300px;
+  }
+}
+
+@media (min-width: 769px) {
+  .before-after-image {
+    max-width: 350px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .before-after-image {
+    max-width: 450px;
+  }
+}

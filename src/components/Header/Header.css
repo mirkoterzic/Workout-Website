@@ -1,0 +1,11 @@
+a:hover {
+  color: orange;
+}
+a {
+  transition: color 0.5s ease;
+}
+@media (max-width: 425px) {
+  .nav {
+    display: none;
+  }
+}

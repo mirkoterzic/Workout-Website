@@ -1,0 +1,42 @@
+.footer {
+  background-color: #000000; /* Black background */
+}
+
+.footer-column {
+  text-align: left; /* Left align text */
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin: 4px 0; /* Space between links */
+}
+
+/* Logo styling */
+.logo {
+  max-width: 150px; /* Limit the logo size */
+  height: auto;
+}
+
+/* Divider styling */
+.divider {
+  background-color: #ff8c00; /* Orange color for the divider */
+  height: 4px; /* Height of the divider */
+  margin: 8px 0; /* Space around the divider */
+  border-radius: 2px; /* Rounded corners */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer {
+    padding: 2rem 0;
+  }
+
+  .footer-column {
+    margin-bottom: 1.5rem; /* Space between columns on mobile */
+  }
+}
