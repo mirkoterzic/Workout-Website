@@ -19,7 +19,7 @@ const Header = forwardRef((props, ref) => (
         <a href="/about">About Me</a>
       </li>
       <li className="cursor-pointer">
-        <a href="#">Services</a>
+        <a href="/training-plans">Services</a>
       </li>
       <li className="cursor-pointer">
         <a href="#">Contact</a>

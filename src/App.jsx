@@ -4,6 +4,7 @@ import Header from "./components/Header/Header.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import Home from "./pages/Home/Home.jsx"; // Import the Home page
 import AboutPage from "./pages/About/AboutPage.jsx"; // Import the About page
+import TrainingPlanPage from "./pages/TrainingPlan/TrainingPlanPage.jsx";
 
 function App() {
   const [headerHeight, setHeaderHeight] = useState(0);
@@ -29,7 +30,8 @@ function App() {
       <Header ref={headerRef} />
       <Routes>
         <Route path="/" element={<Home headerHeight={headerHeight} />} />
-        <Route path="/about" element={<AboutPage />} /> {/* Add About route */}
+        <Route path="/about" element={<AboutPage />} />
+        <Route path="/training-plans" element={<TrainingPlanPage />} />{" "}
       </Routes>
       <Footer />
     </Router>
