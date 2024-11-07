@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { FaArrowLeft, FaArrowRight, FaTimes } from "react-icons/fa";
 import "./TrainingPlanPage.css";
 
 const TrainingPlanPage = () => {
@@ -7,8 +7,11 @@ const TrainingPlanPage = () => {
     "/src/assets/images/ryan with client 1.jpg"
   );
   const [selectedImageGroup, setSelectedImageGroup] = useState(
-    "/src/assets/images/ryan with client 2.jpg"
+    "/src/assets/images/group_workout_4.jpg"
   );
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [lightboxImage, setLightboxImage] = useState(null);
+  const [currentGallery, setCurrentGallery] = useState([]);
 
   const imagesOneOnOne = [
     "/src/assets/images/ryan with client 1.jpg",
@@ -18,11 +21,30 @@ const TrainingPlanPage = () => {
   ];
 
   const imagesGroup = [
-    "/src/assets/images/ryan with client 1.jpg",
-    "/src/assets/images/ryan with client 2.jpg",
-    "/src/assets/images/ryan with client 3.jpg",
-    "/src/assets/images/ryan with client 4.jpg",
+    "/src/assets/images/group_workout_1.jpg",
+    "/src/assets/images/group_workout_2.jpg",
+    "/src/assets/images/group_workout_3.jpg",
+    "/src/assets/images/group_workout_.jpg",
   ];
+
+  const openLightbox = (image, gallery) => {
+    setLightboxOpen(true);
+    setLightboxImage(image);
+    setCurrentGallery(gallery);
+  };
+
+  const closeLightbox = () => {
+    setLightboxOpen(false);
+    setLightboxImage(null);
+  };
+
+  const navigateLightbox = (direction) => {
+    const currentIndex = currentGallery.indexOf(lightboxImage);
+    const newIndex =
+      (currentIndex + direction + currentGallery.length) %
+      currentGallery.length;
+    setLightboxImage(currentGallery[newIndex]);
+  };
 
   const navigateImageOneOnOne = (direction) => {
     const currentIndex = imagesOneOnOne.indexOf(selectedImageOneOnOne);
@@ -85,9 +107,11 @@ const TrainingPlanPage = () => {
                 <img
                   src={selectedImageOneOnOne}
                   alt="Selected workout"
-                  className="rounded-lg shadow-lg main-image"
+                  className="rounded-lg shadow-lg main-image cursor-pointer"
+                  onClick={() =>
+                    openLightbox(selectedImageOneOnOne, imagesOneOnOne)
+                  }
                 />
-                {/* Navigation buttons for One-on-One gallery */}
                 <FaArrowLeft
                   className="gallery-nav-left"
                   onClick={() => navigateImageOneOnOne(-1)}
@@ -122,9 +146,9 @@ const TrainingPlanPage = () => {
                 <img
                   src={selectedImageGroup}
                   alt="Selected group workout"
-                  className="rounded-lg shadow-lg main-image"
+                  className="rounded-lg shadow-lg main-image cursor-pointer"
+                  onClick={() => openLightbox(selectedImageGroup, imagesGroup)}
                 />
-                {/* Navigation buttons for Group gallery */}
                 <FaArrowLeft
                   className="gallery-nav-left"
                   onClick={() => navigateImageGroup(-1)}
@@ -175,6 +199,28 @@ const TrainingPlanPage = () => {
           </div>
         </section>
       </div>
+
+      {/* Lightbox for image viewing */}
+      {lightboxOpen && (
+        <div className="lightbox">
+          <div className="lightbox-content">
+            <FaTimes className="close-icon" onClick={closeLightbox} />
+            <img
+              src={lightboxImage}
+              alt="Lightbox"
+              className="lightbox-image"
+            />
+            <FaArrowLeft
+              className="lightbox-nav-left"
+              onClick={() => navigateLightbox(-1)}
+            />
+            <FaArrowRight
+              className="lightbox-nav-right"
+              onClick={() => navigateLightbox(1)}
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 };
