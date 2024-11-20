@@ -22,7 +22,7 @@ const Header = forwardRef((props, ref) => {
       />
 
       {/* Desktop Navigation */}
-      <ul className="hidden sm:flex nav text-white gap-8 font-bold">
+      <ul className="hidden sm:flex nav text-white gap-8 font-bold  text-[1.3rem]">
         <li className="cursor-pointer hover:text-orange">
           <a href="/">Home</a>
         </li>
