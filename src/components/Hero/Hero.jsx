@@ -25,9 +25,11 @@ const Hero = ({ headerHeight }) => {
           With over 10 years of experience, I’m here to help you achieve your
           fitness goals.
         </p>
-        <button className="bg-orange-500 hover:bg-orange-700 text-white font-semibold py-2 px-4 rounded transition duration-300">
-          Book Your Consultation Now
-        </button>
+        <a href="#contact">
+          <button className="bg-orange-500 hover:bg-orange-700 text-white font-semibold py-2 px-4 rounded transition duration-300">
+            Book Your Consultation Now
+          </button>
+        </a>
       </div>
     </div>
   );
