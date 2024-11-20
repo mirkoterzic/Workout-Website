@@ -6,13 +6,13 @@ const WorkoutPlans = () => {
     <div className="workout-plans-section py-12">
       <div className="max-w-6xl mx-auto px-6">
         {/* Header */}
-        <h2 className="text-5xl font-bold text-center mb-12 text-white">
+        <h2 className="text-5xl font-bold text-center mb-28 text-white">
           Workout Plans
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 cursor-default">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-20 cursor-default">
           {/* One-on-One Personal Training - Card */}
-          <div className="card p-6 rounded-lg shadow-lg bg-gradient-to-b from-black to-gray-800 text-white">
+          <div className="card p-6 rounded-lg    bg-gradient-to-b from-black to-gray-800 text-white">
             <h3 className="text-3xl font-bold text-center mb-4 text-orange-500">
               One-on-One Personal Training
             </h3>
@@ -43,7 +43,7 @@ const WorkoutPlans = () => {
           </div>
 
           {/* Group Workouts - Card */}
-          <div className="card p-6 rounded-lg shadow-lg bg-gradient-to-b from-black to-gray-800 text-white">
+          <div className="card p-6 rounded-lg    bg-gradient-to-b from-black to-gray-800 text-white">
             <h3 className="text-3xl font-bold text-center mb-4 text-orange-500">
               Group Workouts
             </h3>
