@@ -46,7 +46,7 @@ const Clients = () => {
   return (
     <div className="clients-section py-12  text-white">
       <div className="max-w-6xl  mx-auto px-6">
-        <h2 className="text-5xl font-bold text-center mb-12 text-orange-500">
+        <h2 className="text-5xl font-bold text-center mb-28 text-orange-500">
           Client Testimonials
         </h2>
 
