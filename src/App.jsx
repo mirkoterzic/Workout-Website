@@ -4,6 +4,7 @@ import Header from "./components/Header/Header.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import Home from "./pages/Home/Home.jsx"; // Import the Home page
 import AboutPage from "./pages/About/AboutPage.jsx"; // Import the About page
+import ContactPage from "./pages/Contact/ContactPage.jsx";
 import TrainingPlanPage from "./pages/TrainingPlan/TrainingPlanPage.jsx";
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home headerHeight={headerHeight} />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/contact" element={<ContactPage />} />
         <Route path="/training-plans" element={<TrainingPlanPage />} />{" "}
       </Routes>
       <Footer />
