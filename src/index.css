@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* offset the scroll to div id  */
+.section-offset {
+  scroll-margin-top: 80px;
+}
