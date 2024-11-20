@@ -4,7 +4,7 @@ import "./TrainingPlanPage.css";
 
 const TrainingPlanPage = () => {
   const [selectedImageOneOnOne, setSelectedImageOneOnOne] = useState(
-    "/src/assets/images/ryan with client 1.jpg"
+    "/src/assets/images/ryan_with_client_1.jpg"
   );
   const [selectedImageGroup, setSelectedImageGroup] = useState(
     "/src/assets/images/group_workout_4.jpg"
@@ -14,17 +14,17 @@ const TrainingPlanPage = () => {
   const [currentGallery, setCurrentGallery] = useState([]);
 
   const imagesOneOnOne = [
-    "/src/assets/images/ryan with client 1.jpg",
-    "/src/assets/images/ryan with client 2.jpg",
-    "/src/assets/images/ryan with client 3.jpg",
-    "/src/assets/images/ryan with client 4.jpg",
+    "/src/assets/images/ryan_with_client_1.jpg",
+    "/src/assets/images/ryan_with_client_2.jpg",
+    "/src/assets/images/ryan_with_client_3.jpg",
+    "/src/assets/images/ryan_with_client_4.jpg",
   ];
 
   const imagesGroup = [
     "/src/assets/images/group_workout_1.jpg",
     "/src/assets/images/group_workout_2.jpg",
     "/src/assets/images/group_workout_3.jpg",
-    "/src/assets/images/group_workout_.jpg",
+    "/src/assets/images/group_workout_4.jpg",
   ];
 
   const openLightbox = (image, gallery) => {
