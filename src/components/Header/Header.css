@@ -1,11 +1,43 @@
+/* Base styles */
+a {
+  transition: color 0.3s ease-in-out;
+}
+
 a:hover {
   color: orange;
 }
-a {
-  transition: color 0.5s ease;
-}
-@media (max-width: 425px) {
+
+/* Desktop navigation visibility */
+@media (max-width: 640px) {
   .nav {
     display: none;
   }
+}
+
+/* Mobile Menu Styling */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  z-index: 10;
+}
+
+/* Animated mobile menu */
+.fixed {
+  transition: transform 0.5s ease-in-out;
+}
+/* Ensure the sticky header stays visible */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 50; /* Ensures it stays above other content */
+  background-color: black; /* Re-apply background to avoid transparency */
+}
+
+/* Smooth scroll transition */
+html {
+  scroll-behavior: smooth;
 }
