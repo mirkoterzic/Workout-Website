@@ -97,7 +97,7 @@ const ContactPage = () => {
         </div>
       </section>
 
-      <section className="contact-form-section py-12 bg-gray-900">
+      <section className="contact-form-section py-12">
         <div className="max-w-3xl mx-auto px-6">
           <h2 className="text-4xl font-bold text-orange-400 mb-6">
             Send Us a Message

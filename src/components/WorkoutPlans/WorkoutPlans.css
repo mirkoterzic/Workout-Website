@@ -1,6 +1,6 @@
 /* Gradient background for the entire section */
 .workout-plans-section {
-  background: linear-gradient(135deg, #434343, #5a5959);
+  background: #000;
   padding: 3rem 0;
 }
 

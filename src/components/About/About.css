@@ -1,3 +1,6 @@
+#about {
+  background: linear-gradient(to bottom, #333, #333, #000);
+}
 .image-container {
   border: 5px solid #ff8c00;
   border-radius: 0.5rem;

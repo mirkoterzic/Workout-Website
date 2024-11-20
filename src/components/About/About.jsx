@@ -4,7 +4,10 @@ import "./about.css"; // Import your CSS file
 
 const About = () => {
   return (
-    <div className="min-h-screen bg-black text-white flex flex-col items-center justify-center p-7">
+    <div
+      id="about"
+      className="min-h-screen  text-white flex flex-col items-center justify-center p-7"
+    >
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-14">
           <h2 className="text-4xl font-bold underline">

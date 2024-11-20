@@ -1,9 +1,5 @@
 .clients-section {
-  background: linear-gradient(
-    135deg,
-    #222222,
-    #333333
-  ); /* Dark gradient background */
+  background-color: hsl(0, 0%, 0%);
 }
 
 .testimonial-card {
