@@ -66,8 +66,11 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact-section py-12 bg-teal-900 text-white">
-      <div className="max-w-3xl mx-auto px-6">
+    <div
+      id="contact"
+      className="contact-section  section-offset py-12 text-white"
+    >
+      <div className="max-w-3xl mx-auto px-6 lg:py-10">
         <div className="contact-form">
           <h2 className="text-5xl font-bold mb-6 text-orange-400">
             Get Started Today!
