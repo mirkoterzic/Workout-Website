@@ -8,13 +8,13 @@
 .card {
   background: linear-gradient(to bottom, #111111, #333333);
   border-radius: 10px;
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.8), 0 0 50px rgba(255, 140, 0, 0.8); /* Increased shadow depth */
+  box-shadow: 0 0 50px rgba(255, 140, 0, 0.932); /* Increased shadow depth */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
   transform: translateY(-12px); /* Slightly stronger lift on hover */
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.8), 0 0 70px rgba(255, 140, 0, 1.8); /* Stronger shadows with a wider glow */
+  box-shadow: 0 0 70px rgba(255, 140, 0, 1.8); /* Stronger shadows with a wider glow */
 }
 
 /* Gradient button style */
