@@ -22,7 +22,7 @@ const WorkoutPlans = () => {
               fitness goals. Ideal for anyone who needs specialized attention
               for form, technique, and continuous progress.
             </p>
-            <ul className="card-list text-center text-lg mb-6">
+            <ul className="card-list text-center text-lg mb-6 font-bold">
               <li>Personalized workout plans</li>
               <li>One-on-one coaching</li>
               <li>Custom nutrition guidance</li>
@@ -55,7 +55,7 @@ const WorkoutPlans = () => {
               fitness levels. These workouts provide a sense of community,
               motivating you to push your limits alongside others.
             </p>
-            <ul className="card-list text-center text-lg mb-6">
+            <ul className="card-list text-center text-lg mb-6 font-bold">
               <li>High-energy group challenges</li>
               <li>Supportive environment</li>
               <li>Varied exercises for all levels</li>
