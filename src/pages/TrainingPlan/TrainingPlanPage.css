@@ -27,12 +27,13 @@
 }
 
 .main-image:hover {
-  transform: scale(1.03); /* Slightly zoom on hover */
+  transform: scale(1.01); /* Slightly zoom on hover */
 }
 
 .thumbnail-gallery {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  overflow: visible;
 }
 
 .thumbnail {

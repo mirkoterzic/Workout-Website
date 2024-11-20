@@ -121,7 +121,7 @@ const TrainingPlanPage = () => {
                   onClick={() => navigateImageOneOnOne(1)}
                 />
               </div>
-              <div className="thumbnail-gallery grid grid-cols-4 gap-2 overflow-auto">
+              <div className="thumbnail-gallery grid grid-cols-4 gap-2  ">
                 {imagesOneOnOne.map((image, index) => (
                   <img
                     key={index}
@@ -158,7 +158,7 @@ const TrainingPlanPage = () => {
                   onClick={() => navigateImageGroup(1)}
                 />
               </div>
-              <div className="thumbnail-gallery grid grid-cols-4 gap-2 overflow-auto">
+              <div className="thumbnail-gallery grid grid-cols-4 gap-2  ">
                 {imagesGroup.map((image, index) => (
                   <img
                     key={index}
