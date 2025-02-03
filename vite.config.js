@@ -1,10 +1,15 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base: "/", // Ensures proper routing for SPAs
   server: {
-    host: true, // Add this line to expose the network host address
+    host: true, // Exposes the network host address
+    historyApiFallback: true, // Fixes React Router refresh issues
+  },
+  build: {
+    outDir: "dist", // Default output folder
+    assetsDir: "assets", // Keeps assets organized
   },
 });

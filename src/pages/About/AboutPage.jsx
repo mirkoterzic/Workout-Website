@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import aboutImage from "/src/assets/images/about-image.jpg";
+
 import "./AboutPage.css";
 
 const AboutPage = () => {
@@ -59,7 +59,7 @@ const AboutPage = () => {
         <div className="flex lg:gap-28 flex-col md:flex-row items-center">
           <div className="md:w-1/2 mb-6 md:mb-0 image-container">
             <img
-              src={aboutImage}
+              src="../assets/images/about-image.jpg"
               alt="About Me"
               className="w-full h-auto rounded-lg shadow-lg"
             />
@@ -168,28 +168,28 @@ const journey = [
   {
     year: "2013",
     name: "Certified Personal Trainer (CPT)",
-    icon: "/src/assets/icons/diploma_whhite-removebg-preview.png",
+    icon: "./assets/icons/diploma_whhite-removebg-preview.png",
     story:
       "My journey began with the Certified Personal Trainer (CPT) certification. It was the first step in turning my passion for fitness into a career. This certification gave me the tools to design safe and effective workout plans for my clients, focusing on their individual needs.",
   },
   {
     year: "2015",
     name: "Certified Strength and Conditioning Specialist (CSCS)",
-    icon: "/src/assets/icons/kettlebell_white-removebg-preview.png",
+    icon: "./assets/icons/kettlebell_white-removebg-preview.png",
     story:
       "Earning my CSCS certification took my expertise to the next level. This allowed me to work with athletes and advanced clients, focusing on performance enhancement, strength training, and injury prevention. It pushed me to deeply understand biomechanics and sports science.",
   },
   {
     year: "2018",
     name: "Nutrition Coach",
-    icon: "/src/assets/icons/meal_white-removebg-preview.png",
+    icon: "./assets/icons/meal_white-removebg-preview.png",
     story:
       "Realizing that fitness isn't just about workouts, I pursued Nutrition Coaching. This certification empowered me to guide my clients toward balanced, sustainable eating habits that complement their training, helping them achieve their body composition goals.",
   },
   {
     year: "2020",
     name: "CPR/AED Certified",
-    icon: "/src/assets/icons/heart_-removebg-preview.png",
+    icon: "./assets/icons/heart_-removebg-preview.png",
     story:
       "Safety is always a priority. My CPR/AED certification ensures that I can provide immediate assistance in case of emergencies during training sessions, giving my clients peace of mind knowing they're in safe hands.",
   },

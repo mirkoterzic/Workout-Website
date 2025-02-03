@@ -1,6 +1,5 @@
 import React from "react";
 import "./Hero.css";
-import heroImage from "/src/assets/images/freepik__the-rest-of-the-gym__14777_Nero AI_Photo_Face.png";
 
 const Hero = ({ headerHeight }) => {
   const isLargeScreen = window.innerWidth > 1024;
@@ -12,7 +11,11 @@ const Hero = ({ headerHeight }) => {
       style={{ height: heroHeight }}
       className="hero flex items-center justify-start p-8 text-white relative bg-black"
     >
-      <img src={heroImage} alt="Hero" className="hero-image" />
+      <img
+        src="../assets/images/freepik__the-rest-of-the-gym__14777_Nero AI_Photo_Face.png"
+        alt="Hero"
+        className="hero-image"
+      />
       <div className="flex flex-col items-start max-w-lg absolute lg:ml-44 md:ml-5">
         <h1 className="text-4xl font-bold mb-4 drop-shadow-lg">
           Get Fit, Stay Strong: Personalized Plans for Every Goal

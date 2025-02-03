@@ -1,5 +1,5 @@
 import React from "react";
-import aboutImage from "/src/assets/images/about-image.jpg";
+
 import "./about.css"; // Import your CSS file
 
 const About = () => {
@@ -17,7 +17,7 @@ const About = () => {
         <div className="flex lg:gap-28 flex-col md:flex-row items-center">
           <div className="md:w-1/2 mb-6 md:mb-0 image-container">
             <img
-              src={aboutImage}
+              src="../assets/images/about-image.jpg"
               alt="About Me"
               className="w-full h-auto rounded-lg shadow-lg"
             />
@@ -93,19 +93,19 @@ const About = () => {
 const certificates = [
   {
     name: "Certified Personal Trainer (CPT)",
-    icon: "/src/assets/icons/diploma_whhite-removebg-preview.png",
+    icon: "./assets/icons/diploma_whhite-removebg-preview.png",
   },
   {
     name: "Certified Strength and Conditioning Specialist (CSCS)",
-    icon: "/src/assets/icons/kettlebell_white-removebg-preview.png",
+    icon: "./assets/icons/kettlebell_white-removebg-preview.png",
   },
   {
     name: "Nutrition Coach",
-    icon: "/src/assets/icons/meal_white-removebg-preview.png",
+    icon: "./assets/icons/meal_white-removebg-preview.png",
   },
   {
     name: "CPR/AED Certified",
-    icon: "/src/assets/icons/heart_-removebg-preview.png",
+    icon: "./assets/icons/heart_-removebg-preview.png",
   },
 ];
 

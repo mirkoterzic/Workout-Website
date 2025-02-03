@@ -4,27 +4,27 @@ import "./TrainingPlanPage.css";
 
 const TrainingPlanPage = () => {
   const [selectedImageOneOnOne, setSelectedImageOneOnOne] = useState(
-    "/src/assets/images/ryan_with_client_1.jpg"
+    "././assets/images/ryan_with_client_1.jpg"
   );
   const [selectedImageGroup, setSelectedImageGroup] = useState(
-    "/src/assets/images/group_workout_4.jpg"
+    "././assets/images/group_workout_4.jpg"
   );
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [lightboxImage, setLightboxImage] = useState(null);
   const [currentGallery, setCurrentGallery] = useState([]);
 
   const imagesOneOnOne = [
-    "/src/assets/images/ryan_with_client_1.jpg",
-    "/src/assets/images/ryan_with_client_2.jpg",
-    "/src/assets/images/ryan_with_client_3.jpg",
-    "/src/assets/images/ryan_with_client_4.jpg",
+    "././assets/images/ryan_with_client_1.jpg",
+    "././assets/images/ryan_with_client_2.jpg",
+    "././assets/images/ryan_with_client_3.jpg",
+    "././assets/images/ryan_with_client_4.jpg",
   ];
 
   const imagesGroup = [
-    "/src/assets/images/group_workout_1.jpg",
-    "/src/assets/images/group_workout_2.jpg",
-    "/src/assets/images/group_workout_3.jpg",
-    "/src/assets/images/group_workout_4.jpg",
+    "././assets/images/group_workout_1.jpg",
+    "././assets/images/group_workout_2.jpg",
+    "././assets/images/group_workout_3.jpg",
+    "././assets/images/group_workout_4.jpg",
   ];
 
   const openLightbox = (image, gallery) => {

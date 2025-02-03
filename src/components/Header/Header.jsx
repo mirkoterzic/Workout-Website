@@ -17,7 +17,7 @@ const Header = forwardRef((props, ref) => {
       {/* Logo */}
       <img
         className="max-h-[50px]"
-        src="/src/assets/logo/logo-dark.png"
+        src="./assets/logo/logo-dark.png"
         alt="Logo"
       />
 

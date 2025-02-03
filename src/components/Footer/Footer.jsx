@@ -1,6 +1,5 @@
 import React from "react";
 import "./Footer.css"; // Import your CSS file for styling
-import Logo from "/src/assets/logo/logo-dark.png"; // Adjust the path to your logo image
 
 const Footer = () => {
   return (
@@ -8,7 +7,11 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-6 py-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
         {/* Column 1: Logo and Description */}
         <div className="footer-column">
-          <img src={Logo} alt="Company Logo" className="logo" />
+          <img
+            src="./assets/logo/logo-dark.png"
+            alt="Company Logo"
+            className="logo"
+          />
           <h3 className="font-bold text-xl mt-4">Ryan Thompson</h3>
           <p className="text-sm mt-2">
             Your partner in achieving fitness goals and a healthier lifestyle.

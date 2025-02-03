@@ -7,14 +7,14 @@ const testimonialsWithImages = [
     quote:
       "I never thought I could achieve this level of fitness. Ryan's program changed my life!",
     stars: 5,
-    clientImage: "/src/assets/images/jane_after.jpg",
+    clientImage: "./assets/images/jane_after.jpg",
   },
   {
     clientName: "John Smith",
     quote:
       "The personalized attention I received was incredible. I feel stronger and more confident!",
     stars: 5,
-    clientImage: "/src/assets/images/john_after.jpg",
+    clientImage: "./assets/images/john_after.jpg",
   },
 ];
 
